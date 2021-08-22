@@ -1,0 +1,72 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:WpfApp2"
+		mc:Ignorable="d"
+		Title="MainWindow" Height="600" Width="400">
+	<Grid x:Name="Main" Background="AntiqueWhite">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="50*"/>
+			<RowDefinition Height="100*"/>
+			<RowDefinition Height="80*"/>
+			<RowDefinition Height="80*"/>
+			<RowDefinition Height="80*"/>
+			<RowDefinition Height="80*"/>
+			<RowDefinition Height="80*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="40*"/>
+			<ColumnDefinition Width="40*"/>
+			<ColumnDefinition Width="40*"/>
+			<ColumnDefinition Width="40*"/>
+		</Grid.ColumnDefinitions>
+        <Border BorderBrush="DimGray" BorderThickness="1" Grid.ColumnSpan="4">
+            <TextBlock x:Name="Operations" Grid.ColumnSpan="4" Grid.Row="0" Background="#AEFFA07A" FontSize="16" TextWrapping="Wrap" FontFamily="Segoe UI Black" Foreground="#FFFF7838" />
+        </Border>
+
+        <Border BorderBrush="DimGray" BorderThickness="1,0,1,1" Grid.ColumnSpan="4" Grid.Row="1">
+            <TextBlock x:Name="Resultat" Background="#D8ADD8E6" Grid.ColumnSpan="4" Grid.Row="1" FontSize="56" FontFamily="Segoe UI Black" Foreground="#FF005DCD" />
+        </Border>
+		
+        <Button x:Name="CE" Grid.Row="2" Grid.Column="0" FontSize="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#e94646" Cursor="Hand">CE</Button>
+		
+		<Button x:Name="C" Grid.Row="2" Grid.Column="1" FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#ee6d6d" Cursor="Hand">C</Button>
+
+
+        <Button x:Name="Сomparison" Grid.Row="2" Grid.Column="2"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#f29393" Content="←" Padding="0,0,0,10" Cursor="Hand"/>
+		<Button x:Name="Divide" Grid.Row="2" Grid.Column="3"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#f7baba" Content="/" Padding="0,0,0,10" Cursor="Hand"/>
+		
+		<Button x:Name="Seven" Grid.Row="3" Grid.Column="0"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#cd7e00" Content="7" Cursor="Hand" />
+		
+		<Button x:Name="Eight" Grid.Row="3" Grid.Column="1"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#e89400" Content="8" Cursor="Hand" />
+		
+		<Button x:Name="Nine" Grid.Row="3" Grid.Column="2"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#ffaa1e" Content="9" Cursor="Hand" />
+		
+		<Button x:Name="Multiply" Grid.Row="3" Grid.Column="3"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#ffc13a" Content="*" Padding="18" Cursor="Hand"/>
+		
+		<Button x:Name="Four" Grid.Row="4" Grid.Column="0"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#FFA2A81D" Content="4" Cursor="Hand" />
+		
+		<Button x:Name="Five" Grid.Row="4" Grid.Column="1"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#D8A2A81D" Content="5" Cursor="Hand" />
+		
+		<Button x:Name="Six" Grid.Row="4" Grid.Column="2"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#B2A2A81D" Content="6" Cursor="Hand" />
+		
+		<Button x:Name="Minus" Grid.Row="4" Grid.Column="3"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#8CA2A81D" Content="-" Padding="0,0,0,10" Cursor="Hand"/>
+		
+		<Button x:Name="one" Grid.Row="5" Grid.Column="0"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#FF498F34" Content="1" Cursor="Hand" />
+		
+		<Button x:Name="two" Grid.Row="5" Grid.Column="1"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#D8498F34" Content="2" Cursor="Hand" />
+		
+		<Button x:Name="three" Grid.Row="5" Grid.Column="2"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#B2498F34" Content="3" Cursor="Hand" />
+		
+		<Button x:Name="plus" Grid.Row="5" Grid.Column="3"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#8C498F34" Content="+" Padding="0,0,0,10" Cursor="Hand"/>
+		
+		<Button x:Name="Point" Grid.Row="6" Grid.Column="0"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#FF197F9C" Content="." Cursor="Hand" />
+
+        <Button x:Name="zero" Grid.Row="6" Grid.Column="1"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#CC197F9C" Content="0" Cursor="Hand" />
+
+        <Button x:Name="Equal" Grid.Row="6" Grid.Column="2"  FontSize ="48" Background="AntiqueWhite" FontFamily="Segoe UI Black" Foreground="#99197F9C" Content="=" Grid.ColumnSpan="2" Margin="0,0,0,0" Padding="0,0,0,10" Cursor="Hand"/>
+		
+	</Grid>
+</Window>
